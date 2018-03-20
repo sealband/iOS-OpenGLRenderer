@@ -57,6 +57,10 @@
 		18D832A61E4C532D0024B188 /* RGBAFrameCopier.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18D832A51E4C532D0024B188 /* RGBAFrameCopier.mm */; };
 		18D832A91E4C579A0024B188 /* rgba_frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18D832A71E4C579A0024B188 /* rgba_frame.cpp */; };
 		18D832AB1E4C659C0024B188 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D832AA1E4C659C0024B188 /* 1.png */; };
+		9767CDAE2060DAEF00746DE5 /* GLESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767CDAD2060DAEF00746DE5 /* GLESUtils.m */; };
+		9767CDB22060DBAF00746DE5 /* VertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9767CDB12060DBAF00746DE5 /* VertexShader.glsl */; };
+		9767CDB42060DBDB00746DE5 /* FragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9767CDB32060DBDB00746DE5 /* FragmentShader.glsl */; };
+		9767CDB82060DC4900746DE5 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9767CDB72060DC4900746DE5 /* OpenGLView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +153,12 @@
 		18D832A71E4C579A0024B188 /* rgba_frame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rgba_frame.cpp; sourceTree = "<group>"; };
 		18D832A81E4C579A0024B188 /* rgba_frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rgba_frame.h; sourceTree = "<group>"; };
 		18D832AA1E4C659C0024B188 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		9767CDAC2060DAEF00746DE5 /* GLESUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLESUtils.h; sourceTree = "<group>"; };
+		9767CDAD2060DAEF00746DE5 /* GLESUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLESUtils.m; sourceTree = "<group>"; };
+		9767CDB12060DBAF00746DE5 /* VertexShader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
+		9767CDB32060DBDB00746DE5 /* FragmentShader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
+		9767CDB62060DC4900746DE5 /* OpenGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		9767CDB72060DC4900746DE5 /* OpenGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +209,7 @@
 		18D830181E4C13F70024B188 /* OpenGLRenderer */ = {
 			isa = PBXGroup;
 			children = (
-				18D832A71E4C579A0024B188 /* rgba_frame.cpp */,
-				18D832A81E4C579A0024B188 /* rgba_frame.h */,
+				9767CDB52060DC1200746DE5 /* New Group */,
 				18D832A31E4C52B50024B188 /* opengl */,
 				18D832481E4C26AE0024B188 /* 3rdparty */,
 				18D830511E4C24770024B188 /* utils */,
@@ -326,12 +335,27 @@
 		18D832A31E4C52B50024B188 /* opengl */ = {
 			isa = PBXGroup;
 			children = (
+				18D832A71E4C579A0024B188 /* rgba_frame.cpp */,
+				18D832A81E4C579A0024B188 /* rgba_frame.h */,
 				18D832A01E4C50E90024B188 /* PreviewView.h */,
 				18D832A11E4C50E90024B188 /* PreviewView.mm */,
 				18D832A41E4C532D0024B188 /* RGBAFrameCopier.h */,
 				18D832A51E4C532D0024B188 /* RGBAFrameCopier.mm */,
 			);
 			name = opengl;
+			sourceTree = "<group>";
+		};
+		9767CDB52060DC1200746DE5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				9767CDAC2060DAEF00746DE5 /* GLESUtils.h */,
+				9767CDAD2060DAEF00746DE5 /* GLESUtils.m */,
+				9767CDB12060DBAF00746DE5 /* VertexShader.glsl */,
+				9767CDB32060DBDB00746DE5 /* FragmentShader.glsl */,
+				9767CDB62060DC4900746DE5 /* OpenGLView.h */,
+				9767CDB72060DC4900746DE5 /* OpenGLView.m */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +469,7 @@
 			files = (
 				18D8327E1E4C26AE0024B188 /* libpng-config.in in Resources */,
 				18D832781E4C26AE0024B188 /* CHANGES in Resources */,
+				9767CDB22060DBAF00746DE5 /* VertexShader.glsl in Resources */,
 				18D832871E4C26AE0024B188 /* pngbar.jpg in Resources */,
 				18D8327F1E4C26AE0024B188 /* libpng-manual.txt in Resources */,
 				18D832821E4C26AE0024B188 /* libpngpf.3 in Resources */,
@@ -464,6 +489,7 @@
 				18D832841E4C26AE0024B188 /* png.5 in Resources */,
 				18D832AB1E4C659C0024B188 /* 1.png in Resources */,
 				18D830261E4C13F80024B188 /* Assets.xcassets in Resources */,
+				9767CDB42060DBDB00746DE5 /* FragmentShader.glsl in Resources */,
 				18D832771E4C26AE0024B188 /* ANNOUNCE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +525,7 @@
 				18D830211E4C13F70024B188 /* ViewController.m in Sources */,
 				18D832981E4C26AE0024B188 /* pngwutil.c in Sources */,
 				18D832861E4C26AE0024B188 /* png_decoder.cpp in Sources */,
+				9767CDAE2060DAEF00746DE5 /* GLESUtils.m in Sources */,
 				18D832891E4C26AE0024B188 /* pngerror.c in Sources */,
 				18D8328D1E4C26AE0024B188 /* pngpread.c in Sources */,
 				18D8328A1E4C26AE0024B188 /* pngget.c in Sources */,
@@ -507,6 +534,7 @@
 				18D830541E4C24770024B188 /* CommonUtil.m in Sources */,
 				18D8328B1E4C26AE0024B188 /* pngmem.c in Sources */,
 				18D832A91E4C579A0024B188 /* rgba_frame.cpp in Sources */,
+				9767CDB82060DC4900746DE5 /* OpenGLView.m in Sources */,
 				18D832951E4C26AE0024B188 /* pngwio.c in Sources */,
 				18D8327C1E4C26AE0024B188 /* image.c in Sources */,
 				18D832971E4C26AE0024B188 /* pngwtran.c in Sources */,

@@ -8,6 +8,7 @@
 
 #import "PngPreviewController.h"
 #import "PreviewView.h"
+#import "OpenGLView.h"
 @interface PngPreviewController ()
 
 @end
@@ -39,7 +40,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_previewView render];
+//    [_previewView render];
+    OpenGLView *view = [[OpenGLView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:view];
+    
 }
 - (void) dealloc {
     if(_previewView){
